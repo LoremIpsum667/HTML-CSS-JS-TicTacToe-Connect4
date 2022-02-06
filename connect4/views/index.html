@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/connect4/content/css/style.css" media="all" />
+    <title>Connect 4</title>
+</head>
+
+<body>
+    <h1>Connect 4</h1>
+    <h3>Select PvP mode or PvCPU mode.</h3>
+    <form class="buttons" action="">
+        PVP
+        <input id="pvp" value="pvp" type="radio" name="pvp" checked="true">&nbsp;&nbsp;
+        PVCPU
+        <input id="pvcpu" value="pvcpu" type="radio" name="pvp" checked="false">
+    </form>
+    <div id="player" class="display"></div>
+    <div class="gameContainer">
+        <!-- div ou je mets mes cases -->
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+        <div onclick="play(this)" class="cases"></div>
+    </div>
+    <div id="playerXwin"></div>
+    <div id="playerOwin"></div>
+    <section class="controls">
+        <button id="resetGame" onClick="window.location.reload();">Reset Game</button><!-- button pour reset le jeu -->
+    </section>
+    <script type="text/javascript" src="/connect4/content/js/app.js"></script>
+</body>
+
+</html>
+
+<!-- 26.11.21 -->

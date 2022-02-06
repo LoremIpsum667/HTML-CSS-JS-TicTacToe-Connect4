@@ -1,0 +1,168 @@
+/* font utilise pour le doc */
+@font-face {
+  font-family: "Neonidas";
+  src: url(/tictactoe/content/font/Neonidas.otf);
+}
+
+/* padding du doc */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Neonidas";
+}
+
+/* personalisation du titre */
+h1 {
+  text-align: center;
+  color: red;
+  font-size: 60px;
+  margin-top: 3rem;
+  margin-bottom: 9rem;
+  opacity: 0.6;
+}
+
+/* background du doc*/
+body {
+  background: url("/tictactoe/content/img/black.gif");
+  background-size: cover;
+}
+
+.backgroundGame {
+  height: 100vh;
+  padding-top: 1px;
+}
+/* background du player X*/
+.display {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* margin-right: 50rem;
+    margin-left: 50rem; */
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid whitesmoke;
+  background: #222233;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+/* class pour cacher des element dans le doc */
+.hide {
+  display: none;
+}
+
+/* setting general de la div ou il se trouve les grids pour le jeu */
+.gameContainer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+  margin-top: 3rem;
+}
+
+/* setting des cases du jeu */
+.cases {
+  /* background: #222233; */
+  background: black;
+  background-size: cover;
+  opacity: 0.5;
+  border: 1px solid whitesmoke;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+}
+
+/* on donne un couleur à les joueurs */
+.playerX {
+  color: #f44336;
+}
+
+.playerO {
+  color: #df78ef;
+}
+
+#playerXwin {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#playerOwin {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#Tie {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* settings pour le button */
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#resetGame {
+  background: whitesmoke;
+  color: #171820;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#music {
+  /* display: none;  */
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  opacity: 0.2;
+}
+
+h6 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  color: whitesmoke;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}

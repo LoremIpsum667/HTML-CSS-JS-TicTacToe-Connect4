@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/tictactoe/content/css/style.css" media="all" />
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main class="backgroundGame">
+        <!-- background du jeu -->
+        <span style="text-decoration: underline; color: red">
+            <h1>Tic Tac Toe</h1>
+        </span> <!-- titre -->
+        <h3>Select PvP mode or PvCPU mode.</h3>
+        <form class="buttons" action="">
+            PVP
+            <input id="pvp" onchange="choiceMode()" value="pvp" type="radio" name="pvp" checked="true">&nbsp;&nbsp;
+            PVCPU
+            <input id="pvcpu" onchange="choiceMode()" value="pvcpu" type="radio" name="pvp" checked="false">
+        </form>
+        <div id="player" class="display"></div>
+        <div class="gameContainer">
+            <!-- div ou je mets mes cases -->
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+            <div onclick="play(this)" class="cases"></div>
+        </div>
+        <div id="playerXwin"></div>
+        <div id="playerOwin"></div>
+        <div id="Tie"></div>
+        <section class="controls">
+            <button id="resetGame" onClick="window.location.reload();">Reset</button><!-- button pour reset le jeu -->
+        </section>
+        <!-- <div id="music">
+            <audio controls loop autoplay height="" width=""><source src="sound/lofi1h.mp3" type="audio/mp3" /></audio>
+        </div> -->
+        <h6>by Lorem-Ipsum.667</h6>
+    </main>
+    <script type="text/javascript" src="/tictactoe/content/js/app.js"></script>
+</body>
+
+</html>
+
+<!-- 22.11.2021 -->

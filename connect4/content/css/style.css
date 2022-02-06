@@ -1,0 +1,127 @@
+/* top */
+@font-face {
+  font-family: "nasa";
+  src: url(/connect4/content/font/nasa.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "nasa";
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 60px;
+  margin-bottom: 1rem;
+  /* opacity: 0.6; */
+}
+
+h3 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  color: whitesmoke;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+body {
+  background: url(/connect4/content/img/future.gif);
+  background-size: cover;
+}
+
+/* players */
+.playerX {
+  color: #f44336;
+}
+
+.playerO {
+  color: #df78ef;
+}
+
+/* game */
+.gameContainer {
+  justify-content: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19% 19% 19%;
+  grid-template-rows: 17% 17% 17% 17% 17% 17%;
+  width: 550px;
+  margin-top: 2rem;
+}
+/* 10% 10% 10% 10% 10% 10% 10% */
+/* #222233 */
+.cases {
+  background: #1c313a;
+  opacity: 0.9;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 400px;
+}
+
+.display {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  /* margin-right: 50rem;
+    margin-left: 50rem; */
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid whitesmoke;
+  background: #1c313a;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+/* bot */
+#playerXwin {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#playerOwin {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#resetGame {
+  background: whitesmoke;
+  color: #1c313a;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
